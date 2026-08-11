@@ -16,6 +16,21 @@ Purpose: portfolio piece documenting the Google Search Console indexing audit-an
 Scrub policy per the plan doc: **no scrubbing needed** for this repo -- domain, click/impression numbers, and indexing status aren't sensitive the way GA4/GTM property/container IDs are.
 
 ### What Is Next
-- Not yet committed/pushed -- do that as part of closing out today's session
 - Continue the Weekly Tracking table on the planned weekly cadence (see the new `google-tools-weekly` skill)
+- No other known gaps
+
+## Session: 2026-08-10 (2) -- 2 real indexing gaps fixed same day
+
+Same session as above, after Sawandi asked to "fix some of the errors in search console." Drilled into each "Not indexed" reason via the Pages report:
+
+- **`/products/freelanceflow/` and `/get-the-checklist/`**: both real, in the current sitemap, "Referring page: None detected" -- genuinely never crawled. Requested priority indexing for both via URL Inspection, confirmed "Indexing requested" for each.
+- **4 "Page with redirect" flags**: all `?page_id=N` WordPress query-string auto-redirects -- confirmed benign, matches the exact pattern the 07-29 audit already established, no action needed.
+- **2 stale 404s (`?page_id=89`, `/steadmark`)**: not linked from the current sitemap or homepage -- these are old crawl data Google is still holding onto, not live dead links on the site today. `/steadmark`'s 404 specifically was already confirmed intentional by Sawandi in a separate 2026-07-18 session (see `benchline-theme/context.md`), unrelated to today. No site-side fix needed; Google will drop these naturally on recrawl.
+- **`robots.txt` block confirmed** as just `/wp-admin/*` -- expected, no action.
+- **"Crawled - not indexed" (`/shop/`, `/hello-world/`)**: expected thin-content exclusions, `/hello-world/` entry is stale cached data from before its 07-29 deletion.
+
+Not yet reflected in the README's Weekly Tracking table (that captured the numbers *before* these fixes) -- next weekly run should show the real effect of the 2 priority-crawl requests once Google processes them.
+
+### What Is Next
+- Watch next week's indexing numbers for whether the 2 priority-crawled pages actually get indexed
 - No other known gaps
