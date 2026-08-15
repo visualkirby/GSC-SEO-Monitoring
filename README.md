@@ -18,13 +18,13 @@ A real Google Search Console indexing audit for benchlineanalytics.com. Rather t
 
 # What's Inside
 
-1️⃣ **Sitemap verification** — Confirmed the live sitemap (`page-sitemap.xml`, 8 pages) was already submitted and successfully read, closing out a stale assumption that a different sitemap file still needed submitting.
+1️⃣ **Sitemap verification:** Confirmed the live sitemap (`page-sitemap.xml`, 8 pages) was already submitted and successfully read, closing out a stale assumption that a different sitemap file still needed submitting.
 
-2️⃣ **Full exclusion classification** — Every one of the 8 non-indexed URLs checked individually in GSC and sorted by real cause: robots.txt blocks, benign redirects, deprioritized thin content, dead links, and genuinely never-crawled pages.
+2️⃣ **Full exclusion classification:** Every one of the 8 non-indexed URLs checked individually in GSC and sorted by real cause: robots.txt blocks, benign redirects, deprioritized thin content, dead links, and genuinely never-crawled pages.
 
-3️⃣ **Priority crawl requests** — Used the URL Inspection tool to manually request indexing for the 3 real product pages Google had discovered via the sitemap but never actually crawled. All 3 confirmed "Indexing requested."
+3️⃣ **Priority crawl requests:** Used the URL Inspection tool to manually request indexing for the 3 real product pages Google had discovered via the sitemap but never actually crawled. All 3 confirmed "Indexing requested."
 
-4️⃣ **Dead link cleanup** — Traced 2 real 404s back to footer navigation links pointing at removed pages; removed the dead links and replaced them with a real, live page.
+4️⃣ **Dead link cleanup:** Traced 2 real 404s back to footer navigation links pointing at removed pages; removed the dead links and replaced them with a real, live page.
 
 ---
 
