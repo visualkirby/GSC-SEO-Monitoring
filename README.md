@@ -39,6 +39,8 @@ A real Google Search Console indexing audit for benchlineanalytics.com. Rather t
 | **Never crawled (real gap)** | **3** | **Priority crawl requested** |
 | **Dead links (real gap)** | **2** | **Removed, replaced with live page** |
 
+![Page Indexing](screenshots/gsc-indexing-2026-08-10.png)
+
 ---
 
 # Weekly Tracking
