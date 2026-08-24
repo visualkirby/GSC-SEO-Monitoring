@@ -47,6 +47,8 @@ A real Google Search Console indexing audit for benchlineanalytics.com. Rather t
 
 Ongoing snapshots captured weekly, separate from the audit case study above. Shows real ups and downs over time, not just the fixed-point before/after.
 
+**Goal, tied to the FreelanceFlow relaunch:** 0 real 404s and 90%+ pages indexed by Pre-Launch (currently 2 real 404s, 52% indexed). See `FreelanceFlow-App/docs/metrics-goals.md` for the full framework.
+
 | Date | Indexed | Not Indexed | Total Clicks (3mo) | Impressions (3mo) | Avg. Position | Screenshots |
 |---|---|---|---|---|---|---|
 | 2026-08-10 | 7 | 11 | 2 | 86 | 17.2 | [Overview](screenshots/gsc-overview-2026-08-10.png) · [Performance](screenshots/gsc-performance-2026-08-10.png) · [Indexing](screenshots/gsc-indexing-2026-08-10.png) |
