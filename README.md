@@ -50,6 +50,7 @@ Ongoing snapshots captured weekly, separate from the audit case study above. Sho
 | Date | Indexed | Not Indexed | Total Clicks (3mo) | Impressions (3mo) | Avg. Position | Screenshots |
 |---|---|---|---|---|---|---|
 | 2026-08-10 | 7 | 11 | 2 | 86 | 17.2 | [Overview](screenshots/gsc-overview-2026-08-10.png) · [Performance](screenshots/gsc-performance-2026-08-10.png) · [Indexing](screenshots/gsc-indexing-2026-08-10.png) |
+| 2026-08-24 | 12 | 11 | 4 (Overview widget, ~6-week window) / 141 impr. (Site Kit 28-day widget) | -- | Not captured this pull (Performance page itself wasn't screenshotted) | Indexed count up 7->12, real improvement. Not-indexed breakdown pulled for the first time: 2 real 404s, 4 pages with redirect, 1 noindex, 1 robots-blocked, 2 "discovered, not yet indexed," 1 "crawled, not indexed" -- the 2 404s are the only clear action item, rest are mostly intentional/expected for a small site. Click/impression figures come from two different widgets with different date windows this pull (flagged, not reconciled) -- next pull should screenshot the Performance page directly for a clean apples-to-apples number. | [Overview](screenshots/gsc-overview-2026-08-24.png) · [Indexing](screenshots/gsc-indexing-2026-08-24.png) |
 
 ---
 
