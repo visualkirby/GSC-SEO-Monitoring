@@ -56,11 +56,33 @@ Ongoing snapshots captured weekly, separate from the audit case study above. Sho
 
 ---
 
+# BigQuery Trends Discovery (added 2026-08-24)
+
+A companion research stream, separate from the GSC audit above: the `seo-geo-research-agent` runs saved BigQuery queries against Google's own public Trends dataset (`bigquery-public-data.google_trends`), looking for real breakout search terms relevant to whichever product is currently in Pre-Launch or Launch. Real, working access confirmed live under the existing `upwork-acquisition-system` GCP project, which already carries billing/quota from prior Upwork pipeline work.
+
+![BigQuery Trends demo query, confirming real live access](screenshots/bigquery-trends-demo-2026-08-24.png)
+
+Schema confirmed directly (not assumed) before writing any discovery query: `term, week, score, rank, percent_gain, refresh_date, dma_name, dma_id` across all 4 tables in the dataset (`top_terms`, `top_rising_terms`, `international_top_terms`, `international_top_rising_terms`).
+
+![Confirmed schema for top_rising_terms](screenshots/bigquery-trends-schema-2026-08-24.png)
+
+Two starter discovery queries built and saved in the project's Queries list:
+
+| Query | Filters | First run (2026-08-24) |
+|---|---|---|
+| `FreelanceFlow_Discovery_RisingTerms` | upwork, freelance, gig work, job scorer, proposal generator (90-day window) | 0 rows |
+| `CareerEngine_Discovery_RisingTerms` | resume, job search, job application, career engine, ai job (90-day window) | 0 rows |
+
+**0 rows is a real, expected finding, not a failed query** — niche B2B terms rarely break into Google's national top-25 rising sample, which skews toward sports, entertainment, and broad consumer topics. The value of these saved queries is catching the rare time a relevant term does break out, not producing a steady stream of hits. See `FreelanceFlow-App/docs/growth-log.md` for the ongoing log of future runs.
+
+---
+
 # Tools Used
 
 - Google Search Console (URL Inspection, Coverage report, Sitemaps)
 - Yoast SEO (sitemap generation)
 - WordPress (footer navigation)
+- Google BigQuery (`bigquery-public-data.google_trends` public dataset)
 
 ---
 
